@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ArticulosCRUD
 {
@@ -17,11 +15,11 @@ namespace ArticulosCRUD
             Nombre = nombre;
             Cantidad = cantidad;
             Precio = precio;
-
         }
-        public override string ToString() // Sobreescribe el método ToString , todas las clasen heredan de object que tiene definido el metodo ToString
+
+        public override string ToString()
         {
-            return $"ID, Nombre: {Nombre}, Precio: {Precio}, Cantidad: {Cantidad}";
+            return $"ID: {Id}, Nombre: {Nombre}, Precio: ${Precio}, Cantidad: {Cantidad}";
         }
     }
 }
